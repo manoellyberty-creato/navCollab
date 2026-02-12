@@ -1,18 +1,23 @@
 <script setup></script>
 
 <template>
-
   <div>
     <nav>
-      <router-link to="/about">About</router-link>
+      <router-link :to="{ name: 'home' }" class="nav">Home</router-link>
     </nav>
+
     <main>
-    <router-view/>
+      <router-view/>
     </main>
-
   </div>
-
 </template>
 
-<style scoped></style>
+<style scoped>
+div{
+  background-color: aquamarine;
 
+}
+.nav{
+  text-decoration: none;
+}
+</style>
